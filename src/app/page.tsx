@@ -16,7 +16,12 @@ export default function Home() {
         <Image
           src="/Service.png"
           alt="Service Image"
-          style={{ maxWidth: "40%", maxHeight: "40%", position: "relative" }}
+          style={{
+            maxWidth: "40%",
+            maxHeight: "40%",
+            position: "relative",
+            marginBottom: "2rem",
+          }}
         ></Image>
       </div>
     </>
