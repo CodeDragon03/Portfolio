@@ -11,7 +11,7 @@ export default function Home() {
             fontSize: "6rem",
           }}
         >
-          Service Page !
+          Down Time !
         </h1>
         <Image
           src="/Service.png"
