@@ -9,7 +9,7 @@ export default function Home() {
           style={{
             fontFamily: "Twinkle_Star",
             fontSize: "4rem",
-            padding: "10px",
+            padding: "2rem",
           }}
         >
           Big things coming soon ....
@@ -24,7 +24,7 @@ export default function Home() {
           style={{
             fontFamily: "Twinkle_Star",
             fontSize: "4rem",
-            padding: "10px",
+            padding: "2rem",
           }}
         >
           Stay excited!
