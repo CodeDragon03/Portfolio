@@ -4,8 +4,13 @@ export default function Home() {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center min-h-screen py-2 "
-        style={{ height: "100vh", backgroundImage: `url(${Background})` }}
+        className="flex flex-col items-center justify-center min-h-screen py-2"
+        style={{
+          height: "100vh",
+          backgroundImage: `url(${Background})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       >
         <h1
           className="font-bold italic text-center"
