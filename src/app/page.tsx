@@ -11,7 +11,7 @@ export default function Home() {
             fontSize: "4rem",
           }}
         >
-          Big things coming soon ....
+          Service Page
         </p>
         <Image
           src="/Service.png"
