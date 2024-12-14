@@ -6,7 +6,11 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center min-h-screen py-2 relative">
         <p
           className="text-6xl max-w-60 font-bold italic absolute top-40 left-20 m-4 lg:top-20 lg:left-40 md:top-40 md:left-40"
-          style={{ fontFamily: "Twinkle_Star", fontSize: "4rem" }}
+          style={{
+            fontFamily: "Twinkle_Star",
+            fontSize: "4rem",
+            padding: "10px",
+          }}
         >
           Big things coming soon ....
         </p>
@@ -17,7 +21,11 @@ export default function Home() {
         ></Image>
         <p
           className="text-6xl max-w-5 font-bold italic absolute m-4 bottom-20 right-20 lg:bottom-20 lg:right-30 md:bottom-30 md:right-40"
-          style={{ fontFamily: "Twinkle_Star", fontSize: "4rem" }}
+          style={{
+            fontFamily: "Twinkle_Star",
+            fontSize: "4rem",
+            padding: "10px",
+          }}
         >
           Stay excited!
         </p>
