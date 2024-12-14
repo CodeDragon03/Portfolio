@@ -12,6 +12,12 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 639px) {
+  html {
+    font-size: 30%;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
