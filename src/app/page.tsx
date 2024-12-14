@@ -5,13 +5,13 @@ export default function Home() {
     <>
       <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <h1
-          className="text-6xl max-w-60 font-bold italic text-center"
+          className="text-6xl font-bold italic text-center"
           style={{
             fontFamily: "Twinkle_Star",
             fontSize: "6rem",
           }}
         >
-          Service Page
+          Service Page !
         </h1>
         <Image
           src="/Service.png"
