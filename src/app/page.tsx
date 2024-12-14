@@ -1,5 +1,3 @@
-import Background from "../Assets/Service.png";
-
 export default function Home() {
   return (
     <>
@@ -7,7 +5,7 @@ export default function Home() {
         className="flex flex-col items-center justify-center min-h-screen py-2"
         style={{
           height: "100vh",
-          backgroundImage: `url(${Background})`,
+          backgroundImage: `url(../Assets/Service.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
