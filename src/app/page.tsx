@@ -5,7 +5,7 @@ export default function Home() {
         className="flex flex-col items-center justify-center min-h-screen py-2"
         style={{
           height: "100vh",
-          backgroundImage: `url(/Assets/Service.png)`,
+          backgroundImage: `url(./assets/Service.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
