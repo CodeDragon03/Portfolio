@@ -17,7 +17,7 @@ export default function Home() {
           src="/Service.png"
           alt="Service Image"
           style={{
-            maxWidth: "40%",
+            maxWidth: "50%",
             maxHeight: "40%",
             position: "relative",
             marginBottom: "2rem",
