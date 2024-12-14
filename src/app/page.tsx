@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <div className="flex flex-col items-center justify-center min-h-screen py-2 relative">
         <p
-          className="text-6xl max-w-60 font-bold italic absolute top-40 left-20 m-4 lg:top-20 lg:left-40 md:top-40 md:left-40"
+          className="text-6xl max-w-60 font-bold italic absolute top-50 left-20 m-4 lg:top-20 lg:left-40 md:top-40 md:left-40"
           style={{ fontFamily: "Twinkle_Star", fontSize: "4rem" }}
         >
           Big things coming soon ....
@@ -16,7 +16,7 @@ export default function Home() {
           style={{ maxWidth: "50%", maxHeight: "50%" }}
         ></Image>
         <p
-          className="text-6xl font-bold italic absolute m-4 bottom-40 right-10 lg:bottom-20 lg:right-20 md:bottom-30 md:right-30"
+          className="text-6xl font-bold italic absolute m-4 bottom-50 right-10 lg:bottom-20 lg:right-20 md:bottom-30 md:right-30"
           style={{ fontFamily: "Twinkle_Star", fontSize: "4rem" }}
         >
           Stay excited!
