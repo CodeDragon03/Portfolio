@@ -13,8 +13,7 @@ export default function Home() {
         <Image
           src="/Service.png"
           alt="Service Image"
-          width={700}
-          height={700}
+          style={{ maxWidth: "70%", maxHeight: "70%" }}
         ></Image>
         <p
           className="text-6xl font-bold italic absolute bottom-40 right-60 m-4"
