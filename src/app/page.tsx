@@ -5,7 +5,7 @@ export default function Home() {
         className="flex flex-col items-center justify-center min-h-screen py-2"
         style={{
           height: "100vh",
-          backgroundImage: `url(../Assets/Service.png)`,
+          backgroundImage: `url(/Assets/Service.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -18,7 +18,7 @@ export default function Home() {
             marginBottom: "2rem",
           }}
         >
-          Website Under Maintanence!
+          Website Under Maintenance!
         </h1>
       </div>
     </>
