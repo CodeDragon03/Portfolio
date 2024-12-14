@@ -19,7 +19,7 @@ export default function Home() {
           style={{ maxWidth: "40%", maxHeight: "40%" }}
         ></Image>
         <p
-          className="text-6xl max-w-9 font-bold italic absolute m-4 bottom-20 right-30 lg:bottom-20 lg:right-30 md:bottom-30 md:right-40"
+          className="text-6xl max-w-9 font-bold italic absolute m-4 bottom-20 right-20 lg:bottom-20 lg:right-30 md:bottom-30 md:right-40"
           style={{
             fontFamily: "Twinkle_Star",
             fontSize: "4rem",
