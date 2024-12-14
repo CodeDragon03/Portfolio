@@ -18,15 +18,6 @@ export default function Home() {
           alt="Service Image"
           style={{ maxWidth: "40%", maxHeight: "40%" }}
         ></Image>
-        <p
-          className="text-6xl max-w-9 font-bold italic absolute m-4 bottom-40 right-45 lg:bottom-40 lg:right-45 md:bottom-40 md:right-45"
-          style={{
-            fontFamily: "Twinkle_Star",
-            fontSize: "4rem",
-          }}
-        >
-          Stay excited!
-        </p>
       </div>
     </>
   );
