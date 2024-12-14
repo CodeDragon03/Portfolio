@@ -1,0 +1,6 @@
+.serviceBackground {
+  background-image: url("./assets/Service.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
