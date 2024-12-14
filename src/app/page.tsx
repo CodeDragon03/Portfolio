@@ -3,7 +3,7 @@ export default function Home() {
     <>
       <div
         className="flex flex-col items-center justify-center min-h-screen py-2 "
-        style={{ backgroundImage: "./public/Service.png" }}
+        style={{ backgroundImage: "./public/Service.png", height: "100vh" }}
       >
         <h1
           className="font-bold italic text-center"
