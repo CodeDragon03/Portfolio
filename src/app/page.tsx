@@ -15,7 +15,7 @@ export default function Home() {
             marginBottom: "2rem",
           }}
         >
-          Down Time !
+          Website Under Maintanence!
         </h1>
       </div>
     </>
