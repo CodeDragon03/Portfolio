@@ -1,9 +1,11 @@
+import Background from "../Assets/Service.png";
+
 export default function Home() {
   return (
     <>
       <div
         className="flex flex-col items-center justify-center min-h-screen py-2 "
-        style={{ backgroundImage: "./public/Service.png", height: "100vh" }}
+        style={{ height: "100vh", backgroundImage: `url(${Background})` }}
       >
         <h1
           className="font-bold italic text-center"
