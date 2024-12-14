@@ -9,7 +9,7 @@ const twinkleStar = Twinkle_Star({
 });
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
+  title: "MyOnlineDiary",
   description: "In progess ...",
 };
 
