@@ -1,0 +1,74 @@
+/* Importing Techno Font */
+@font-face {
+    font-family: 'Base';
+    src:
+        local('Techno'),
+        url('/font/Techno.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Techno-Bold';
+    src:
+        local('Techno-Bold'),
+        url('/font/Techno-Bold.ttf') format('truetype');
+}
+
+/* Custom Variables */
+:root {
+    /* Color */
+    --color-primary: #020617;
+    --color-primary-tint: #020512;
+    --color-primary-shade: #1b1f2e;
+
+    --color-gray: #efeff0;
+    --color-gray-tint: #f5f5f5;
+    --color-gray-shade: #d7d7d8;
+
+    /* Font Weight */
+    --font-weight-b: 400;
+    --font-weight-m: 500;
+    --font-weight-l: 600;
+    --font-weight-xl: 700;
+
+    /* Line Height */
+    --line-height-base: 1.5;
+
+    /* Background Color */
+    --bg-color: white;
+
+    /* Imdex Navbar */
+    --z-index-navbar: 1000;
+}
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    box-sizing: border-box;
+}
+
+/* Font Size */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* Font Family */
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-b);
+    background-color: var(--bg-color);
+}
+
+/* Cursor Follower */
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 1.6rem;
+    background-color: var(--bg-color);
+    mix-blend-mode: difference;
+    z-index: var(--z-index-navbar) + 1;
+    pointer-events: none;
+}
