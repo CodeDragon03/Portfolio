@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Logo } from '../../assets/index';
 
 const BrandLogo = () => {
     return (
@@ -15,17 +14,6 @@ const BrandLogo = () => {
                         {letter}
                     </motion.span>
                 ))}
-                <sup className="logo-icon">
-                    <motion.img
-                        initial={{ opacity: 0, y: -50 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                        src={Logo}
-                        alt="Logo"
-                        className="logo-icon-image"
-                        loading="lazy"
-                    />
-                </sup>
             </span>
         </>
     );
