@@ -2,9 +2,9 @@
 
 import GlobalHeader from './global/GlobalHeader';
 import GlobalFooter from './global/GlobalFooter';
+import CursorFollower from './global/CursorFollower';
 
 /* Importing Other Components */
-import CursorFollower from './other/CursorFollower';
 import LocalNavigationBar from './other/LocalNavigationBar';
 import GLobalNavigationBar from './other/GolbalNavigationBar';
 
