@@ -74,6 +74,11 @@ body {
     pointer-events: none;
 }
 
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
 /* Header */
 
 .header {
@@ -172,6 +177,16 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: var(--font-weight-m);
     transition: all 0.3s ease-in-out;
+}
+
+/* Harbour */
+
+.home-loader {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100vh;
 }
 
 /* Footer */

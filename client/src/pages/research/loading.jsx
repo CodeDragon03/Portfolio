@@ -1,7 +1,5 @@
-import React from "react";
-
 const ResearchLoader = () => {
-  return <></>;
+    return <></>;
 };
 
 export default ResearchLoader;

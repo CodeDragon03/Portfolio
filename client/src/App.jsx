@@ -5,12 +5,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { GlobalFooter, CursorFollower } from './components/index.jsx';
 
 import {
-    HomeLayout,
     HomeLoader,
-    CaseStudyLayout,
     CaseStudyLoader,
-    ResearchLayout,
     ResearchLoader,
+    HomeLayout,
+    CaseStudyLayout,
+    ResearchLayout,
     NotFound,
 } from './pages/index';
 
@@ -24,12 +24,11 @@ const App = () => {
             <BrowserRouter>
                 <motion.div className="container">
                     {/* Main */}
-                    <AnimatePresence mode="wait">
-                        <motion.main className="main">
-                            {/* Cursor Follower */}
-                            <CursorFollower />
-
-                            {/* All the routes */}
+                    <motion.main className="main">
+                        {/* Cursor Follower */}
+                        <CursorFollower />
+                        {/* All the routes */}
+                        <AnimatePresence mode="wait">
                             <Routes>
                                 <Route path="/">
                                     {/* Home  */}
@@ -85,8 +84,8 @@ const App = () => {
                                 {/* Not Found */}
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
-                        </motion.main>
-                    </AnimatePresence>
+                        </AnimatePresence>
+                    </motion.main>
                     {/* Footer */}
                     <GlobalFooter />
                 </motion.div>

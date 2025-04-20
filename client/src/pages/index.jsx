@@ -1,25 +1,25 @@
 /* Imports for Home Page */
-import HomeLayout from "./home/layout";
-import HomeLoader from "./home/loading";
+import HomeLoader from './home/loading';
+import HomeLayout from './home/layout';
 
 /* Imports for Case Study Page */
-import CaseStudyLayout from "./projects/layout";
-import CaseStudyLoader from "./projects/loading";
+import CaseStudyLoader from './projects/loading';
+import CaseStudyLayout from './projects/layout';
 
 /* Imports for Research Page */
-import ResearchLayout from "./research/layout";
-import ResearchLoader from "./research/loading";
+import ResearchLoader from './research/loading';
+import ResearchLayout from './research/layout';
 
 /* Imports Utility Pages */
 
-import NotFound from "./error/index";
+import NotFound from './error/index';
 
 export {
-  HomeLayout,
-  HomeLoader,
-  CaseStudyLayout,
-  CaseStudyLoader,
-  ResearchLayout,
-  ResearchLoader,
-  NotFound,
+    HomeLoader,
+    CaseStudyLoader,
+    ResearchLoader,
+    HomeLayout,
+    CaseStudyLayout,
+    ResearchLayout,
+    NotFound,
 };
