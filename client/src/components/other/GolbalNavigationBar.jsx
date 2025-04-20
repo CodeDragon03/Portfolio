@@ -26,7 +26,7 @@ const GLobalNavigationBar = () => {
                         <motion.li
                             initial={{ opacity: 0, x: 300 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
                             className="navbar-navigation-item"
                         >
                             <Link
@@ -39,7 +39,7 @@ const GLobalNavigationBar = () => {
                         <motion.li
                             initial={{ opacity: 0, x: 300 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
                             className="navbar-navigation-item"
                         >
                             <Link
