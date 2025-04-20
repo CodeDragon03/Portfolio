@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { GlobalFooter, CursorFollower } from './components/index.jsx';
@@ -22,10 +22,10 @@ const App = () => {
     return (
         <>
             <BrowserRouter>
-                <div className="container">
+                <motion.div className="container">
                     {/* Main */}
                     <AnimatePresence mode="wait">
-                        <main className="main">
+                        <motion.main className="main">
                             {/* Cursor Follower */}
                             <CursorFollower />
 
@@ -85,11 +85,11 @@ const App = () => {
                                 {/* Not Found */}
                                 <Route path="*" element={<NotFound />} />
                             </Routes>
-                        </main>
+                        </motion.main>
                     </AnimatePresence>
                     {/* Footer */}
                     <GlobalFooter />
-                </div>
+                </motion.div>
             </BrowserRouter>
         </>
     );

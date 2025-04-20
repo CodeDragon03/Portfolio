@@ -1,10 +1,10 @@
-import React from 'react';
+import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
         <>
-            <title> Protfolio | Home</title>
-            <div className="home"></div>
+            <title> Protfolio | Harbour</title>
+            <motion.div className="home"></motion.div>
         </>
     );
 };
