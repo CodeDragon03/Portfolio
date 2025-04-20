@@ -14,12 +14,9 @@ const GLobalNavigationBar = () => {
                 <motion.div className="navbar-navigation">
                     <ul className="navbar-navigation-list">
                         <motion.li
-                            whileHover={{
-                                backgroundColor: 'var(--color-primary)',
-                                color: 'var(--color-white)',
-                            }}
-                            whileTap={{ scale: 0.9 }}
-                            transition={{ duration: 0.3 }}
+                            initial={{ opacity: 0, x: 300 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
                             className="navbar-navigation-item"
                         >
                             <Link to="/" className="navbar-navigation-link">
@@ -27,12 +24,9 @@ const GLobalNavigationBar = () => {
                             </Link>
                         </motion.li>
                         <motion.li
-                            whileHover={{
-                                backgroundColor: 'var(--color-primary)',
-                                color: 'var(--color-white)',
-                            }}
-                            whileTap={{ scale: 0.9 }}
-                            transition={{ duration: 0.3 }}
+                            initial={{ opacity: 0, x: 300 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
                             className="navbar-navigation-item"
                         >
                             <Link
@@ -43,12 +37,9 @@ const GLobalNavigationBar = () => {
                             </Link>
                         </motion.li>
                         <motion.li
-                            whileHover={{
-                                backgroundColor: 'var(--color-primary)',
-                                color: 'var(--color-white)',
-                            }}
-                            whileTap={{ scale: 0.9 }}
-                            transition={{ duration: 0.3 }}
+                            initial={{ opacity: 0, x: 300 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
                             className="navbar-navigation-item"
                         >
                             <Link

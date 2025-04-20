@@ -7,7 +7,9 @@ const BrandLogo = () => {
             <span className="logo-content">
                 {Array.from('Jay').map((letter, index) => (
                     <motion.span
-                        whileHover={{ scale: 1.1, rotate: '10deg' }}
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
                         key={index}
                         className="logo-letter"
                     >
@@ -15,7 +17,10 @@ const BrandLogo = () => {
                     </motion.span>
                 ))}
                 <sup className="logo-icon">
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0, y: -50 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
                         src={Logo}
                         alt="Logo"
                         className="logo-icon-image"
