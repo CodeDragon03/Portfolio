@@ -4,7 +4,7 @@ const CaseStudy = () => {
     return (
         <>
             <title>Portfolio | Case Study</title>
-            <motion.div className="caseStudy"></motion.div>
+            <div className="caseStudy"></div>
         </>
     );
 };

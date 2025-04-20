@@ -4,7 +4,7 @@ const Research = () => {
     return (
         <>
             <title>Portfolio | Research</title>
-            <motion.div className="research"></motion.div>
+            <div className="research"></div>
         </>
     );
 };

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import BrandLogo from '../ui/BrandLogo';
 
 const GlobalNavigationBar = () => {
-    return <motion.nav className="navbar-global"></motion.nav>;
+    return <nav className="navbar-global"></nav>;
 };
 
 export default GlobalNavigationBar;
