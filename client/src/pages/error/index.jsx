@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 const NotFound = () => {
-  return (
-    <>
-      <title>Title | Error</title>
-    </>
-  );
+    return (
+        <>
+            <title>Portfolio | Error</title>
+        </>
+    );
 };
 
 export default NotFound;

@@ -1,8 +1,14 @@
 import { lazy, Suspense } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import { GlobalFooter, CursorFollower } from './components/index.jsx';
+import {
+    GlobalHeader,
+    GlobalNavigationBar,
+    GlobalFooter,
+    CursorFollower,
+    AnimatedRoutes,
+} from './components/index.jsx';
 
 import {
     HomeLoader,
@@ -22,73 +28,62 @@ const App = () => {
     return (
         <>
             <BrowserRouter>
-                <motion.div className="container">
-                    {/* Main */}
-                    <motion.main className="main">
-                        {/* Cursor Follower */}
-                        <CursorFollower />
-                        {/* All the routes */}
-                        <AnimatePresence mode="wait">
-                            <Routes>
-                                <Route path="/">
-                                    {/* Home  */}
-                                    <Route element={<HomeLayout />}>
-                                        <Route
-                                            index
-                                            element={
-                                                <Suspense
-                                                    fallback={<HomeLoader />}
-                                                >
-                                                    <Home />
-                                                </Suspense>
-                                            }
-                                        />
-                                    </Route>
-                                    {/* Case Study */}
-                                    <Route
-                                        path="case-study"
-                                        element={<CaseStudyLayout />}
-                                    >
-                                        <Route
-                                            index
-                                            element={
-                                                <Suspense
-                                                    fallback={
-                                                        <CaseStudyLoader />
-                                                    }
-                                                >
-                                                    <CaseStudy />
-                                                </Suspense>
-                                            }
-                                        />
-                                    </Route>
-                                    {/* Research */}
-                                    <Route
-                                        path="research"
-                                        element={<ResearchLayout />}
-                                    >
-                                        <Route
-                                            index
-                                            element={
-                                                <Suspense
-                                                    fallback={
-                                                        <ResearchLoader />
-                                                    }
-                                                >
-                                                    <Research />
-                                                </Suspense>
-                                            }
-                                        />
-                                    </Route>
-                                </Route>
-                                {/* Not Found */}
-                                <Route path="*" element={<NotFound />} />
-                            </Routes>
-                        </AnimatePresence>
-                    </motion.main>
-                    {/* Footer */}
-                    <GlobalFooter />
-                </motion.div>
+                {/* Header */}
+                <GlobalHeader>
+                    <GlobalNavigationBar />
+                </GlobalHeader>
+                {/* Main */}
+                <motion.main className="main">
+                    {/* Cursor Follower */}
+                    <CursorFollower />
+                    {/* All the routes */}
+                    <Routes>
+                        <Route path="/" element={<AnimatedRoutes />}>
+                            {/* Home  */}
+                            <Route element={<HomeLayout />}>
+                                <Route
+                                    index
+                                    element={
+                                        <Suspense fallback={<HomeLoader />}>
+                                            <Home />
+                                        </Suspense>
+                                    }
+                                />
+                            </Route>
+                            {/* Case Study */}
+                            <Route
+                                path="case-study"
+                                element={<CaseStudyLayout />}
+                            >
+                                <Route
+                                    index
+                                    element={
+                                        <Suspense
+                                            fallback={<CaseStudyLoader />}
+                                        >
+                                            <CaseStudy />
+                                        </Suspense>
+                                    }
+                                />
+                            </Route>
+                            {/* Research */}
+                            <Route path="research" element={<ResearchLayout />}>
+                                <Route
+                                    index
+                                    element={
+                                        <Suspense fallback={<ResearchLoader />}>
+                                            <Research />
+                                        </Suspense>
+                                    }
+                                />
+                            </Route>
+                        </Route>
+                        {/* Not Found */}
+                        <Route path="*" element={<NotFound />} />
+                    </Routes>
+                </motion.main>
+                {/* Footer */}
+                <GlobalFooter />
             </BrowserRouter>
         </>
     );

@@ -1,15 +1,11 @@
-import { Outlet } from "react-router-dom";
-import { GlobalHeader, LocalNavigationBar } from "../../components";
+import { Outlet } from 'react-router-dom';
 
 const ResearchLayout = () => {
-  return (
-    <>
-      <GlobalHeader>
-        <LocalNavigationBar />
-      </GlobalHeader>
-      <Outlet />
-    </>
-  );
+    return (
+        <>
+            <Outlet />
+        </>
+    );
 };
 
 export default ResearchLayout;
